@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tawazun-deploy
-  namespace: mshaikh-tawazun
+  namespace: roba-tawazun
   labels:
     app: tawazun
     service: tawazun-svc
-    name: MohammedShaikh
+    name: RobaAlmehmadi
 spec:
   replicas: 1
   selector:
@@ -20,7 +20,7 @@ spec:
         service: tawazun-svc
     spec:
       containers:
-        - image: mshaikh911/tawazun
+        - image: robaalmehmadi/tawazun
           name: tawazun
           resources: 
             requests: 

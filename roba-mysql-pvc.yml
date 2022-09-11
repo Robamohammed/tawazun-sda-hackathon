@@ -2,11 +2,11 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: sql-pv-claim
-  namespace: mshaikh-tawazun
+  namespace: roba-tawazun
   labels:
     app: sql
+    name: RobaAlmehmadi
 spec:
-  #storageClassName: local-path
   accessModes:
   - ReadWriteOnce
   resources:

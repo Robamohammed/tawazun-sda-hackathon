@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sql
-  namespace: mshaikh-tawazun
+  namespace: roba-tawazun
   labels:
     app: sql
-    name: MohammedShaikh
+    name: RobaAlmehmadi
 spec:
   replicas: 1
   selector:
